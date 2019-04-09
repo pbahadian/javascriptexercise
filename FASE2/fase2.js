@@ -1,3 +1,0 @@
-
-alert('Me llamo Paula!');
-
