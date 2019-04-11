@@ -98,18 +98,32 @@ var lista = ['taula','cadira','ordinador','libreta'];
 
 */
 
-/*FASE 8
+//FASE 8
 
-var suma = function(valor1, valor2) {
-    return valor1 + valor2;
-};
-var resta = function(num1, num2) {
-    return valor1 - valor2;
-};
-var multiplica = function(num1, num2) {
-    return valor1 * valor2;
-};
-var divide = function(num1, num2) {
-    return valor1 / valor2;
-};
- */
+
+function calculadora(operador,valor1,valor2){
+
+    
+    if (operador == "sum"){
+        
+        return (valor1 + valor2);
+    }
+
+    else if(operador == "sub") {
+        
+        return (valor1 -valor2);
+    }
+
+    else if (operador == "mult") {
+
+        return (valor1 * valor2); 
+    }
+
+    else if (operador == "divide") {
+
+        return (valor1 / valor2);
+    } 
+}
+var resultado = calculadora ("sub",80,20);
+
+console.log (" El resultado es: ",resultado);
